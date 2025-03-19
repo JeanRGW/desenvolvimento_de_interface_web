@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <title>Introdução ao CSS</title>
     <style>
-        p {
-            background-color: blue;
+        #paragrafo_especial {
+          color: blue;
+          font-size: 24pt  
         }
 
-        #paragrafo_especial {
-          color: white;
-          font-size: 24pt  
+        #paragrafo_teste {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 26pt;
+            font-style: italic;
+            font-weight: 700;
+            text-align: start;
+            text-decoration: line-through;
+            text-indent: 30px;
+            text-transform: uppercase;
         }
 
         .paragrafos {
@@ -29,7 +36,7 @@
     -->
 
     <p class="paragrafos">Meu primeiro parágrafo</p>
-    <p>Meu segundo parágrafo</p>
+    <p id="paragrafo_teste">Meu segundo parágrafo</p>
     <p id="paragrafo_especial">Meu terceiro parágrafo</p>
     <p class="paragrafos">Meu quarto parágrafo</p>
 </body>
