@@ -1,5 +1,7 @@
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 #nome {
@@ -7,12 +9,17 @@ body {
     text-align: center;
     font-weight: 400;
     background-color: #aaaaaa;
+    padding: 15px 0px;
+    margin-top: 0px;
 }
 
 .contatosTopo {
     font-size: 15px;
-    text-align: center;
+    margin: 0px auto 0px auto;
     font-variant: small-caps;
+    width: fit-content;
+    padding: 0px 5px;
+    background-color: #dddddd;
 }
 
 .topico {
@@ -20,6 +27,9 @@ body {
     font-weight: bold;
     background-color: #dddddd;
     width: fit-content;
+    padding: 0px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
 }
 
 .lista {
@@ -36,7 +46,32 @@ body {
     color: #0000ff;
 }
 
+.link:hover {
+    background-color: #dddddd;
+}
+
+.link:active {
+    background-color: #909090;
+}
+
+.link:visited {
+    color: #aa00ff;
+}
+
 .subTexto {
     font-variant: small-caps;
     font-weight: bold;
+}
+
+ul li {
+    list-style: square;
+}
+
+.contato {
+    padding-left: 15px;
+    display: inline;
+}
+
+hr {
+    color: gray;
 }
