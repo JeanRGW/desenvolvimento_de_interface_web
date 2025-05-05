@@ -1,0 +1,166 @@
+:root {
+    --cor-principal: #222;
+    --cor-secundaria: #333;
+    --cor-destaque: steelblue;
+    --cor-texto: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 1.6rem;
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+main {
+    margin: auto;
+    width: 70vw;
+    min-width: 40rem;
+    max-width: 80rem;
+    color: var(--cor-texto);
+}
+
+main a:link {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover,
+main a:focus {
+    text-decoration: underline;
+}
+
+main a:visited {
+    color: #aa00ff;
+}
+
+header {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    background-color: var(--cor-destaque);
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.header-data {
+    width: 70%;
+    height: 16rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-data img {
+    height: 100%;
+}
+
+.header-data__contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-variant: small-caps;
+    gap: 1.6rem;
+    background-color: var(--cor-principal);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.header-data__contatos p {
+    margin: 0;
+}
+
+#conteudo {
+    padding: 2rem;
+    background-color: var(--cor-principal);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.topico {
+    background-color: var(--cor-secundaria);
+    padding: 1rem 0;
+    border: 1px solid var(--cor-texto);
+    border-radius: 8px;
+    box-shadow: 10px 10px 8px rgba(255, 255, 255, 0.1);
+}
+
+.topico > p {
+    background-color: var(--cor-destaque);
+    padding: 0.5rem 2rem;
+    border-radius: 0 8px 8px 0;
+    outline: 1px solid var(--cor-texto);
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+}
+
+.topico > ul {
+    list-style-type: square;
+}
+
+.topico > ol {
+    list-style-position: outside;
+}
+
+.topico b {
+    color: var(--cor-destaque);
+}
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--cor-secundaria);
+    border-radius: 0 0 16px 16px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 2em;
+    margin-bottom: 1.2rem;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+footer div a {
+    background-color: var(--cor-principal);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+footer div a:hover {
+    background-color: var(--cor-destaque);
+    transform: scale(1.05);
+    outline: 2px solid black;
+}
