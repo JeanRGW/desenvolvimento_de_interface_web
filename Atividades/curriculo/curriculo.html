@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <title>Novo Currículo</title>
-        <link rel="stylesheet" href="estilo.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <main>
+        <div class="body-wrapper">
             <header>
-                <h1 id="nome"><b>Jean Rafael Guilouski Wojcik</b></h1>
-                <div class="header-data">
-                    <img
-                        id="minhaImg"
-                        src="eu.png"
-                        alt="Imagem de um chicken jockey do Minecraft"
-                    />
+                <h1 class="header__name">
+                    <b>Jean Rafael Guilouski Wojcik</b>
+                </h1>
 
-                    <div class="header-data__contatos">
-                        <p class="contatosTopo">
-                            <a class="link" href="mailto:jeanrgw@gmail.com"
-                                >jeanrgw@gmail.com</a
-                            >
-                        </p>
-                        <p class="contatosTopo">+55 (42) 99858-9919</p>
-                    </div>
+                <div class="header__img">
+                    <img src="eu.png" alt="Minecraft chicken jockey" />
+                </div>
+
+                <div class="header-contacts">
+                    <p class="contatosTopo">
+                        <a class="link" href="mailto:jeanrgw@gmail.com"
+                            >jeanrgw@gmail.com</a
+                        >
+                    </p>
+                    <p class="contatosTopo">+55 (42) 99858-9919</p>
                 </div>
             </header>
-            <div id="conteudo">
-                <div class="topico">
+            <main>
+                <div class="topic">
                     <p>Formação Acadêmica</p>
                     <ul>
                         <li>
@@ -42,7 +43,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="topico">
+                <div class="topic">
                     <p>Experiência</p>
                     <ul>
                         <li>
@@ -60,7 +61,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="topico">
+                <div class="topic">
                     <p>Habilidades</p>
                     <ul>
                         <li>Programação: <b>C++, Java, Typescript</b></li>
@@ -71,7 +72,7 @@
                         <li>Servidores Linux</li>
                     </ul>
                 </div>
-                <div class="topico">
+                <div class="topic">
                     <p>Idiomas</p>
                     <ol>
                         <li>Português - <b>Nativo</b></li>
@@ -80,7 +81,7 @@
                         <li>Ucraniano - <b>Básico</b></li>
                     </ol>
                 </div>
-            </div>
+            </main>
             <footer>
                 <p>Meus Links</p>
                 <div>
@@ -95,6 +96,6 @@
                     >
                 </div>
             </footer>
-        </main>
+        </div>
     </body>
 </html>
